@@ -8,7 +8,8 @@
 <head>
   <title>SDHacks 2018</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="{{ url_for('static', filename='templates/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
@@ -16,24 +17,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
     <body>
-        <script type="text/javascript">
-              $(function() {
-            var formAnimatedInput = $('.form-animate-fields .form-input');
-            formAnimatedInput.each(function() {
-              var $this = $(this);
-
-              $this.on('focus', function() {
-                $this.addClass('is-filled');
-              });
-
-              $this.on('blur', function() {
-                if($this.val().length == 0) {
-                  $this.removeClass('is-filled');
-                }
-              });
-            });
-          });
-        </script>
         <div class="page-wrapper">
           <aside>
             <div class = "content">

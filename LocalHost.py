@@ -19,7 +19,7 @@ app = Flask(__name__)
 
 @app.route('/')  # home page
 def home():
-    return render_template('index.htmL')
+    return render_template('<index class="htmL"></index>')
 
 
 @app.route('/results')
