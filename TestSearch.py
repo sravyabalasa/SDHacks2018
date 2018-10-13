@@ -4,8 +4,7 @@ EXTENSION #1
 - Inputted vacation image: image URL 
 - Displays images that have close percentages to the inputted vacation image
 - Static website where things change !
-- Create a dataset of images
-- ASK: Difference between accessing data for predict and search! 
+- Create a dataset of images (DOING)
 
 EXTENSION #2
 ----------------
@@ -25,7 +24,10 @@ EXTENSION #4
 
 """
 
+"""
+
 #Import Clarifai
+import os
 from clarifai.rest import ClarifaiApp
 from clarifai.rest import Image as ClImage
 
@@ -34,12 +36,86 @@ CLARIFAI_API_KEY = '9f4c8fdd79b24c4aa14ed9f3fec060e2'
 app = ClarifaiApp(api_key = CLARIFAI_API_KEY)
 
 #Text file of image URLS
-FILE_NAME = 'vacations_txt'
+FILE_NAME = 'food_URL.txt'
 FILE_PATH = os.path.join(os.path.curdir, FILE_NAME)
 
+#Counter variables
+current_batch = 0
+counter = 0
+batch_size = 32 #amount imported each time, goes backwards 
 
+#takes each image from the data file line
+with open(FILE_PATH) as data_file:
+	images = [url.strip () for url in data_file] 
+	row_count = len(images)
+	print ("Total number of images: ", row_count)
+
+while(counter < row_count):
+    print("Processing batch: #", (current_batch))
+    imageList = []
+
+    #appends images images in sets of 32
+    #out of bounds error checked for
+    for current_index in range(counter, counter+batch_size - 1):
+        try:
+            imageList.append(ClImage(url=images[current_index]))
+        except IndexError:
+            break
+
+    app.inputs.bulk_create_images(imageList)
+    counter = counter + batch_size
+    current_batch = current_batch + 1
+
+#Searching by image
+#Used as a reference like a training data set
+search = app.inputs.search_by_image(url='https://www.jerseymikes.com/media/static/menu/products/lg/cookie.jpg')
+
+#Returns search results
+for search_result in search:
+    print("Similarity: ", search_result.score, "| URL: ", search_result.url)
+
+ """
+
+# upload.py
+import os
+from clarifai.rest import ClarifaiApp
+from clarifai.rest import Image as ClImage
+app = ClarifaiApp(api_key='9f4c8fdd79b24c4aa14ed9f3fec060e2')
+FILE_NAME = 'vacations_url.txt'
+FILE_PATH = os.path.join(os.path.curdir, FILE_NAME)
+# Counter variables
+current_batch = 0
+counter = 0
+batch_size = 32
+with open(FILE_PATH) as data_file:
+    images = [url.strip() for url in data_file]
+    row_count = len(images)
+    print("Total number of images:", row_count)
+while(counter < row_count):
+    print("Processing batch: #", (current_batch+1))
+    imageList = []
+    for current_index in range(counter, counter+batch_size - 1):
+        try:
+            imageList.append(ClImage(url=images[current_index], allow_dup_url=True))
+        except IndexError:
+            break
+    app.inputs.bulk_create_images(imageList)
+    counter = counter + batch_size
+    current_batch = current_batch + 1
+
+ # search.py
+from clarifai.rest import ClarifaiApp
+app = ClarifaiApp(api_key='9f4c8fdd79b24c4aa14ed9f3fec060e2')
+# Search using a URL
+search = app.inputs.search_by_image(url='https://image.shutterstock.com/image-photo/santorini-greece-picturesq-view-traditional-260nw-1040803156.jpg')
+for search_result in search:
+    print("Score:", search_result.score, "| URL:", search_result.url)
+
+
+"""
 #Training model for images, can be specified
-model = app.models.get('travel-v1.0')
+#model = app.models.get('travel-v1.0')
+model = app.public_models.general_model
 
 #PREDICT API
 #Returns a list of concepts in an image based on model
@@ -55,12 +131,6 @@ def picPredict( imageLink ): #URL should be a string for process
         results.append((concept['name'], str(concept['value'])))
 
     return results
-
-#Searching by image
-search = app.inputs.search_by_image(url='https://japan-magazine.jnto.go.jp/jnto2wm/wp-content/uploads/1608_special_TOTO_main.jpg')
-
-for search_result in search:
-    print("Similarity: ", search_result.score, "| URL: ", search_result.url)
 
 image = picPredict('https://japan-magazine.jnto.go.jp/jnto2wm/wp-content/uploads/1608_special_TOTO_main.jpg')
 
@@ -78,3 +148,4 @@ searchOne = app.inputs.search_by_predicted_concepts(concepts=[image[0][0], image
 for search_result in searchOne:
 	print("Similarity: ", search_result.score, "| URL: ", search_result.url)
 '''
+"""
