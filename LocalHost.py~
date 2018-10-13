@@ -1,37 +1,34 @@
-#importing webapp libraries
+# importing webapp libraries
 import os
-from flask import Flask, url_for, render_template, request, jsonify 
+from flask import Flask, url_for, render_template, request, jsonify
 from flask import *
 
-#importing clarifai api + app setup 
+# importing clarifai api + app setup
 from clarifai.rest import ClarifaiApp
-app = ClarifaiApp(api_key='9f4c8fdd79b24c4aa14ed9f3fec060e2')
+app = ClarifaiApp(api_key='e0d4fa08067248beab61dbcab02f880d')
 model = app.public_models.general_model
 
-from Main import picPredict #importing function
+from Main import picPredict  # importing function
 
-#local host app set up
+# local host app set up
 app = Flask(__name__)
-#localhost:5000 <-- put this in url bar
+# localhost:5000 <-- put this in url bar
 
-#https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/Japan/cherry-blossom-hirosaki-park-japan.jpg?imwidth=450 <-- imageLink
+# https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/Japan/cherry-blossom-hirosaki-park-japan.jpg?imwidth=450 <-- imageLink
 
-@app.route('/')  #home page
-def home(): 
-    return render_template('index.htmL')
+@app.route('/')  # home page
+def home():
+    return render_template('index.html')
 
 @app.route('/results')
 def results():
     imageLink = request.args['inputname']
-    results = picPredict( imageLink )
+    results = picPredict(imageLink)
     print("these are results", str(results))
     printConcept = results[0]
-    printPercentage = str(float(results[1])*100))
+    percentage = results[1]
+    printPercentage = str(float(percentage) * 100)
     return render_template('test.html', concept=printConcept, percentage=printPercentage)
-
-
-
-
 
 
 '''@app.route('/', methods = ["GET", "POST"])
@@ -46,13 +43,13 @@ def background_process():
                     return render_template
             except:
                 return'''
-            
 
-#run local host
-if __name__== "__main__":
+
+# run local host
+if __name__ == "__main__":
     app.run()
 
-'''	<script type=text/javascript>
+''' <script type=text/javascript>
             $(function() {
               $('a#process_input').bind('click', function() {
                 $.getJSON('/background_home', {
@@ -63,4 +60,4 @@ if __name__== "__main__":
                 return false;
               });
             });
-        </script>	'''
+        </script>   '''

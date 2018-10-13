@@ -16,11 +16,9 @@ app = Flask(__name__)
 
 # https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/Japan/cherry-blossom-hirosaki-park-japan.jpg?imwidth=450 <-- imageLink
 
-
 @app.route('/')  # home page
 def home():
-    return render_template('<index class="htmL"></index>')
-
+    return render_template('index.html')
 
 @app.route('/results')
 def results():
@@ -28,7 +26,8 @@ def results():
     results = picPredict(imageLink)
     print("these are results", str(results))
     printConcept = results[0]
-    printPercentage = str(float(results[1]) * 100)
+    percentage = results[1]
+    printPercentage = str(float(percentage) * 100)
     return render_template('test.html', concept=printConcept, percentage=printPercentage)
 
 
