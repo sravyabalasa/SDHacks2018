@@ -1,7 +1,7 @@
 """
 EXTENSION #1
 ----------------
-- Inputted vacation image: image URL 
+- Inputted vacation image: image URL
 - Displays images that have close percentages to the inputted vacation image
 - Static website where things change !
 - Create a dataset of images (DOING)
@@ -21,7 +21,7 @@ EXTENSION #4
 -------------
 - Video
 - Metadata
-- Train the model 
+- Train the model
 
 """
 
@@ -43,11 +43,11 @@ FILE_PATH = os.path.join(os.path.curdir, FILE_NAME)
 #Counter variables
 current_batch = 0
 counter = 0
-batch_size = 32 #amount imported each time, goes backwards 
+batch_size = 32 #amount imported each time, goes backwards
 
 #takes each image from the data file line
 with open(FILE_PATH) as data_file:
-	images = [url.strip () for url in data_file] 
+	images = [url.strip () for url in data_file]
 	row_count = len(images)
 	print ("Total number of images: ", row_count)
 
@@ -81,7 +81,7 @@ for search_result in search:
 import os
 from clarifai.rest import ClarifaiApp
 from clarifai.rest import Image as ClImage
-app = ClarifaiApp(api_key='9f4c8fdd79b24c4aa14ed9f3fec060e2')
+app = ClarifaiApp(api_key='e0d4fa08067248beab61dbcab02f880d')
 FILE_NAME = 'vacations_url.txt'
 FILE_PATH = os.path.join(os.path.curdir, FILE_NAME)
 # Counter variables
