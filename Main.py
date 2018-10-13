@@ -41,7 +41,6 @@ cherryBlossom = picPredict('https://www.telegraph.co.uk/content/dam/Travel/Desti
 print("Your image mostly has: ")
 for i in cherryBlossom:
 	print("Concept: " + i[0])
-	print("Probability : " + i[1])
-	print()
+	print("Percentage Similarity: " + str(float(i[1])*100))
 
 
