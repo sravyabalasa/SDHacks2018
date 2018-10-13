@@ -1,5 +1,4 @@
 #importing webapp libraries
-
 import os
 from flask import Flask, url_for, render_template, request
 from flask import session
@@ -19,8 +18,12 @@ app = Flask(_name_)
 
 @app.route('/')  #home page
 def render_home():
-    picture = picPredict( imageLink )
-    return render_template('home.hmtL', picture)
+    if request.method == 'POST':
+        imageLink = request.args['imageurl']
+        if imageLink:
+            picture = picPredict( imageLink )
+            return picture
+    return render_template('index.hmtL')
 
 #run local host
 if __name__== "__main__":

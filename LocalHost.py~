@@ -4,12 +4,12 @@ import os
 from flask import Flask, url_for, render_template, request
 from flask import session
 
-#importing clarifai api + app setup + functions
+#importing clarifai api + app setup 
 from clarifai.rest import ClarifaiApp
 app = ClarifaiApp(api_key='9f4c8fdd79b24c4aa14ed9f3fec060e2')
 model = app.public_models.general_model
 
-from Main.py import picPredict
+from Main.py import picPredict #importing function
 
 #local host app set up
 app = Flask(_name_)
