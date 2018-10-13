@@ -11,17 +11,14 @@ input{
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: #18a3c6<;
+    color: #18a3c6;
+}
+a.left.carousel-control{
+  padding: 15px;
 }
 
 .demo {
   text-align: left;
-}
-
-.carousel_slide {
-  position: absolute;
-  top: 90%;
-  left: 90%;
 }
 .content {
   position: absolute;
@@ -29,7 +26,6 @@ input{
   left:50%;
   transform: translate(-50%,-50%);
 }
-
 .content2 {
   position: absolute;
   top: 70%;
@@ -39,7 +35,7 @@ input{
 .form-field {
   position: absolute;
   top: 50%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%,-50%);
 }
 /**
