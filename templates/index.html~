@@ -6,22 +6,22 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
     <body>
         <div class="page-wrapper">
           <aside>
-            <h1>UCSD Logo Placeholder</h1>
-            <p class="flourish">~~~~~~</p>
-
+            <div class="image2"><img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/000/296/403/datas/original.png"/></div>
                 <div class="demo">
                 <form class="form form-animate-fields" action="#">
                   <div class="form-field">
-                    <input class="form-input" type="text" name="inputname" id="inputname" placeholder="Input Your Image Url">
+                    <input class="form-input" type="Url" name="inputname" id="inputname" placeholder="Input Your Image Url">
                     <label for="inputname" class="form-label">
                       <span class="form-label-content"></span>
                     </label>
                 </form>
-                </div>
+	      </div>
           </aside>
           <article>
             <div class="author">

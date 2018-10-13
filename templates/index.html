@@ -25,15 +25,15 @@
             $(function() {
               $('a#process_input').bind('click', function() {
                 $.getJSON('/home_backend', {
-                  story: $('textarea[name="imageName"]').val(),
+                  story: $('textarea[name="imageLink"]').val(),
                 }, function(data) {
-                  $('#result').text(data.result);
+                  $('#results').text(data.result);
                 });
                 return false;
               });
             });
-        </script>
-                </div>
+        </script>	
+	      </div>
           </aside>
           <article>
             <div class="author">

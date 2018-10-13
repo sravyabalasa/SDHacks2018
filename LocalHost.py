@@ -1,6 +1,7 @@
 #importing webapp libraries
 import os
-from flask import Flask, url_for, render_template, request, jsonify, *
+from flask import Flask, url_for, render_template, request, jsonify 
+from flask import *
 
 #importing clarifai api + app setup 
 from clarifai.rest import ClarifaiApp
@@ -23,14 +24,17 @@ def home():
 def home_backend():
         if request.method == 'POST':
             try:
-                imageName = request.args['inputname']
+                imageLink = request.args['inputname']
                 if imageLink:
                     results = picPredict( imageLink )
-                    return render_template('index.html', **jsonify(results))
+                    return render_template('index.html', **jsonify(results=results))
+                else:
+                    return render_template
+            except:
+                return
+            
 
 #run local host
 if __name__== "__main__":
-    app.run(debug=False)
-
-    	
+    app.run()
 
