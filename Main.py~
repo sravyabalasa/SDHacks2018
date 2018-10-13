@@ -10,5 +10,3 @@ def picPredict( imageLink ): #url should be a string
         results = (concept['name'], concept['value'])
 
     return results
-
-
