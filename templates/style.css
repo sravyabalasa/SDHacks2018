@@ -11,7 +11,7 @@ input{
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: #18a3c6;
+    color: #fff;
 }
 a.left.carousel-control{
   padding: 15px;
