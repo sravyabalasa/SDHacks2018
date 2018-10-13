@@ -32,6 +32,7 @@ def picPredict( imageLink ): #URL should be a string for process
     results = []
 
     for concept in concepts:
+        results = (concept['name'], concept['value'])
         results.append((concept['name'], str(concept['value'])))
 
     return results
@@ -41,7 +42,6 @@ cherryBlossom = picPredict('https://www.telegraph.co.uk/content/dam/Travel/Desti
 print("Your image mostly has: ")
 for i in cherryBlossom:
 	print("Concept: " + i[0])
-	print("Percentage Similarity: " + float(i[1])*100)
-	print()
+	print("Percentage Similarity: " + str(float(i[1])*100))
 
 

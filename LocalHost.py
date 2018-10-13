@@ -25,7 +25,9 @@ def results():
     imageLink = request.args['inputname']
     results = picPredict( imageLink )
     print("these are results", str(results))
-    return render_template('test.html', results)
+    printConcept = results[0]
+    printPercentage = str(float(results[1])*100)
+    return render_template('test.html', concept=printConcept, percentage=printPercentage)
 
 
 
