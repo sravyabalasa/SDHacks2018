@@ -1,17 +1,3 @@
-"""
-Filename: Main.py
-Date: 10/13/18
-Users: Sravya, Titan, Jill, Stanley
-"""
-
-"""
-MVP
---------
-WebApp that displays Clarifai's normal results in classifying images of vacations
-
-"""
-
-#Import Clarifai
 from clarifai.rest import ClarifaiApp
 
 #Creates an "app" that runs Clarifai
@@ -33,7 +19,12 @@ def picPredict( imageLink ): #URL should be a string for process
 
     return results
 
+<<<<<<< HEAD
 #Passing cherry blossom through model
+=======
+
+'''
+>>>>>>> d0df7b4dbc480a3a70bd890da3c5cac3e284d29c
 response = model.predict_by_url(url='https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/Japan/cherry-blossom-hirosaki-park-japan.jpg?imwidth=450')
 concepts = response['outputs'][0]['data']['concepts']
 for concept in concepts:
@@ -46,3 +37,4 @@ response2 = model.predict_by_url(url='https://static.tripzilla.com/thumb/7/e/102
 concepts = response2['outputs'][0]['data']['concepts']
 for concept in concepts:
     print(concept['name'], concept['value'])
+'''
