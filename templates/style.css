@@ -3,8 +3,44 @@ body {
   font-family: "Cormorant Garamond", serif;
   font-size: 18px;
 }
+
+input{
+   text-align:center;
+   color: white;
+   font-family: "Cormorant Garamond", serif;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #fff;
+}
+
 .demo {
   text-align: left;
+}
+
+.carousel_slide {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+}
+.content {
+  position: absolute;
+  top: 40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.content2 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.form-field {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
 /**
  * Form Styles
@@ -51,7 +87,7 @@ body {
 }
 .form-animate-fields .form-label:before {
   top: 0;
-  background-color: #e6158d;
+  background-color: #18a3c6;
   height: 100%;
   -webkit-transform: translate3d(-101%, 0, 0);
           transform: translate3d(-101%, 0, 0);
@@ -206,13 +242,15 @@ article {
 .image2 img {
   width: 300px;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .text {
   columns: 2;
   column-width: 250px;
   column-gap: 2em;
-  padding: 0 20px;
+  padding: 100px 20px;
   text-align: justify;
 }
 .text p:first-child {
