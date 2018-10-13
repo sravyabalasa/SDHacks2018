@@ -25,29 +25,23 @@ model = app.public_models.general_model
 #Returns a list of concepts in an image based on model
 #Used for access in localHost to imageLink
 def picPredict( imageLink ): #URL should be a string for process
+    #All data given by model
     response = model.predict_by_url(url= imageLink)
+    #Accessing the concepts from all the data
     concepts = response['outputs'][0]['data']['concepts']
     results = []
 
     for concept in concepts:
-        results.append('Name: ' + concept['name'] + ' Value: ' + str(concept['value']))
+        results.append((concept['name'], str(concept['value'])))
 
     return results
 
-#Passing cherry blossom through model
-response = model.predict_by_url(url='https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/Japan/cherry-blossom-hirosaki-park-japan.jpg?imwidth=450')
-concepts = response['outputs'][0]['data']['concepts']
-for concept in concepts:
-    print(concept['name'], concept['value'])
-
+#Passing URL through model
 cherryBlossom = picPredict('https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/Japan/cherry-blossom-hirosaki-park-japan.jpg?imwidth=450')
+print("Your image mostly has: ")
 for i in cherryBlossom:
-	print(i)
+	print("Concept: " + i[0])
+	print("Probability : " + i[1])
+	print()
 
-print('--------')
 
-#Passing through model
-response2 = model.predict_by_url(url='https://static.tripzilla.com/thumb/7/e/102014_800x.jpg')
-concepts = response2['outputs'][0]['data']['concepts']
-for concept in concepts:
-    print(concept['name'], concept['value'])
