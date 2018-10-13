@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+}
+
+.page-wrapper {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .page-wrapper {
+    display: flex;
+  }
+}
+aside {
+  background-color: #222;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 40px;
+}
+
+@media (min-width: 700px) {
+  aside {
+    background-color: #222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    flex: 0 0 50%;
+    padding: 0;
+  }
+}
+h1,
+.flourish {
+  font-size: 6vw;
+  margin: 10px 0;
+  font-family: "Oxygen", sans-serif;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  h1,
+  .flourish {
+    font-size: 4.5vw;
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+}
+h1 {
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.flourish {
+  font-weight: bold;
+}
+
+.bio {
+  margin: 0 20px;
+  text-align: center;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+@media (min-width: 1100px) {
+  .bio {
+    margin: 0 100px;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 1.2em;
+  }
+}
+article {
+  margin: 0;
+}
+
+@media (min-width: 700px) {
+  article {
+    flex: 0 0 50%;
+    margin-left: 50%;
+    padding-top: 30px;
+  }
+}
+.author,
+.photographer {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  color: #777;
+  padding: 0 20px;
+  margin: 0;
+  font-family: "Oxygen", sans-serif;
+}
+.author span,
+.photographer span {
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: capitalize;
+}
+
+@media (min-width: 700px) {
+  .author,
+  .photographer {
+    padding: 0 60px;
+  }
+}
+.image img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.text {
+  columns: 2;
+  column-width: 250px;
+  column-gap: 2em;
+  padding: 0 20px;
+  text-align: justify;
+}
+.text p:first-child {
+  margin-top: 0;
+}
+.text p:first-child:first-letter {
+  float: left;
+  color: red;
+  font-size: 4em;
+  line-height: 35px;
+  padding: 19px 10px 10px 0;
+}
+
+@media (min-width: 1100px) {
+  .text {
+    padding: 0 60px;
+  }
+}
+footer {
+  height: 40px;
+}
