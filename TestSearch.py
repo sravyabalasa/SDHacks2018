@@ -21,6 +21,7 @@ EXTENSION #4
 -------------
 - Video
 - Metadata
+- Train the model 
 
 """
 
