@@ -1,7 +1,6 @@
 #importing webapp libraries
 import os
-from flask import Flask, url_for, render_template, request
-from flask import session
+from flask import Flask, url_for, render_template, request, jsonify, *
 
 #importing clarifai api + app setup 
 from clarifai.rest import ClarifaiApp
@@ -17,14 +16,21 @@ app = Flask(_name_)
 #'https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/Japan/cherry-blossom-hirosaki-park-japan.jpg?imwidth=450' <-- imageLink
 
 @app.route('/')  #home page
-def render_home():
-    if request.method == 'POST':
-        imageLink = request.args['imageurl']
-        if imageLink:
-            picture = picPredict( imageLink )
-            return picture
+def home():
     return render_template('index.hmtL')
+
+@app.route('/', methods = ["GET", "POST"])
+def home_backend():
+        if request.method == 'POST':
+            try:
+                imageName = request.args['inputname']
+                if imageLink:
+                    results = picPredict( imageLink )
+                    return render_template('index.html', **jsonify(results))
 
 #run local host
 if __name__== "__main__":
     app.run(debug=False)
+
+    	
+

@@ -6,8 +6,6 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 </head>
     <body>
         <div class="page-wrapper">
@@ -23,18 +21,6 @@
                       <span class="form-label-content"></span>
                     </label>
                 </form>
-		<script type=text/javascript>
-            $(function() {
-              $('a#process_input').bind('click', function() {
-                $.getJSON('/home_backend', {
-                  story: $('textarea[name="imageName"]').val(),
-                }, function(data) {
-                  $('#result').text(data.result);
-                });
-                return false;
-              });
-            });
-        </script>
                 </div>
           </aside>
           <article>
