@@ -27,7 +27,7 @@ model = app.public_models.general_model
 def picPredict( imageLink ): #URL should be a string for process
     #All data given by model
     response = model.predict_by_url(url= imageLink)
-    #Accessing the concepts from all the data
+    #Accessing the concepts from all the data returned by predict_by_url
     concepts = response['outputs'][0]['data']['concepts']
     results = []
 
