@@ -301,7 +301,7 @@ footer {
                 <div class="demo">
                 <div class="col-md-2 col-md-offset-2"></div>
                 </div>
-                <form class="form form-animate-fields" action="#">
+                <form class="form form-animate-fields" action="/results">
                 <div class = "content2">
                   <div class="form-field">
                       <input class="form-input" type="Url" name="inputname" id="inputname" placeholder= "Place Image Here" textarea spellcheck = "false">
@@ -359,7 +359,6 @@ footer {
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <p> Results here: {{ results }}
             <div class="text">
 
 		    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae harum, accusantium aliquid quia dolores error, fugit placeat ratione amet non nostrum necessitatibus soluta earum ipsum voluptate neque corporis asperiores modi. Placeat unde, autem voluptatibus sed repellendus consequuntur quia temporibus. Repellat sunt officia repudiandae amet quisquam saepe, qui impedit quibusdam beatae.</p>

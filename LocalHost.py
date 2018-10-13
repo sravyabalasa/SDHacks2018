@@ -20,11 +20,17 @@ app = Flask(__name__)
 def home(): 
     return render_template('index.htmL')
 
+@app.route('/results')
 def results():
     imageLink = request.args['inputname']
     results = picPredict( imageLink )
     print("these are results", str(results))
-    return render_template('index.html', results):w
+    return render_template('test.html', results)
+
+
+
+
+
 
 '''@app.route('/', methods = ["GET", "POST"])
 def background_process():
@@ -33,11 +39,11 @@ def background_process():
                 imageLink = request.args['inputname']
                 if imageLink:
                     results = picPredict( imageLink )
-                    return render_template('index.html', results)
+                    return render_template('test.html', results)
                 else:
                     return render_template
             except:
-                return'''''
+                return'''
             
 
 #run local host
