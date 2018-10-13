@@ -11,7 +11,7 @@ input{
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: #fff;
+    color: #18a3c6<;
 }
 
 .demo {
@@ -250,7 +250,7 @@ article {
   columns: 2;
   column-width: 250px;
   column-gap: 2em;
-  padding: 100px 20px;
+  padding: 0 20px;
   text-align: justify;
 }
 .text p:first-child {
