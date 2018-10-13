@@ -203,6 +203,11 @@ article {
   margin: 20px 0;
 }
 
+.image2 img {
+  width: 300px;
+  height: auto;
+}
+
 .text {
   columns: 2;
   column-width: 250px;
