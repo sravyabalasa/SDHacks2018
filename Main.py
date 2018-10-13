@@ -27,9 +27,10 @@ model = app.public_models.general_model
 def picPredict( imageLink ): #URL should be a string for process
     response = model.predict_by_url(url= imageLink)
     concepts = response['outputs'][0]['data']['concepts']
+    results = []
 
     for concept in concepts:
-        results = (concept['name'], concept['value'])
+        results.append('Name: ' + concept['name'] + ' Value: ' + str(concept['value']))
 
     return results
 
@@ -38,6 +39,10 @@ response = model.predict_by_url(url='https://www.telegraph.co.uk/content/dam/Tra
 concepts = response['outputs'][0]['data']['concepts']
 for concept in concepts:
     print(concept['name'], concept['value'])
+
+cherryBlossom = picPredict('https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/Japan/cherry-blossom-hirosaki-park-japan.jpg?imwidth=450')
+for i in cherryBlossom:
+	print(i)
 
 print('--------')
 
