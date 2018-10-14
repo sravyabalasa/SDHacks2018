@@ -1,110 +1,97 @@
-
 <!-- Keanu Reeves never looked so good :-)-->
 <!-- Inspired by this magazine layout:-->
 <!-- https://s-media-cache-ak0.pinimg.com/564x/2e/f7/8d/2ef78d1f44a6ade085bb38810104435a.jpg-->
-<<!-->18a3c6</!-->
 <!DOCTYPE html>
 <html>
-<head>
-  <title>SDHacks 2018</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="{{ url_for('static', filename='./css/style.css') }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
-    <body>
-        <div class="page-wrapper">
-          <aside>
+   <head>
+      <title>SDHacks 2018</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="{{ url_for('static', filename='./css/style.css') }}">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   </head>
+   <body>
+      <div class="page-wrapper">
+         <aside>
             <div class = "content">
-              <div class="image2"><img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/000/296/403/datas/original.png"/></div>
+               <div class="image2"><img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/000/296/403/datas/original.png"/></div>
             </div>
-                <div class="demo">
-                <div class="col-md-2 col-md-offset-2"></div>
-                </div>
-                <form class="form form-animate-fields" action="/results">
-                <div class = "content2">
+            <div class="demo">
+               <div class="col-md-2 col-md-offset-2"></div>
+            </div>
+            <form class="form form-animate-fields" action="/results">
+               <div class = "content2">
                   <div class="form-field">
-                      <input class="form-input" type="Url" name="inputname" id="inputname" placeholder= "Place Image Here" textarea spellcheck = "false">
-    </form>
-                      <label for="firstname" class="form-label"></label>
-                        <span class="form-label-content">&#8291;</span>
+                     <input class="form-input" type="Url" name="inputname" id="inputname" placeholder= "Place Image Here" textarea spellcheck = "false">
+            </form>
+            <label for="firstname" class="form-label"></label>
+            <span class="form-label-content">&#8291;</span>
+            </div>
+            </div>
+      </div>
+      </aside>
+      <article>
+         <div id="myCarousel" class="carousel slide" data-ride="carousel" style = "padding-bottom: 25px; padding-left: 25px; padding-right: 25px">
+            <!-- Indicators -->
+            <ol class="carousel-indicators" >
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+               <div class="item active" style = "padding: 0px">
+                  <img src="https://lonelyplanetimages.imgix.net/a/g/hi/t/512d769cd0d5e56c238eb975d2325940-japan.jpeg?sharp=10&vib=20&w=1200" alt="Los Angeles" style="width:100%;">
+                  <div class="carousel-caption" style = "padding: 5px">
+                     <h3>Los Angeles</h3>
+                     <p>LA is always so much fun!</p>
                   </div>
-                </div>
-        </div>
-          </aside>
-          <article>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" style = "padding-bottom: 25px; padding-left: 25px; padding-right: 25px">
-    <!-- Indicators -->
-    <ol class="carousel-indicators" >
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-
-      <div class="item active" style = "padding: 0px">
-        <img src="https://lonelyplanetimages.imgix.net/a/g/hi/t/512d769cd0d5e56c238eb975d2325940-japan.jpeg?sharp=10&vib=20&w=1200" alt="Los Angeles" style="width:100%;">
-        <div class="carousel-caption" style = "padding: 5px">
-          <h3>Los Angeles</h3>
-          <p>LA is always so much fun!</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="https://cdn.japantimes.2xx.jp/wp-content/uploads/2018/08/n-instagram-a-20180806-870x580.jpg" alt="Chicago" style="width:100%;">
-        <div class="carousel-caption" style = "padding: 5px">
-          <h3>Chicago</h3>
-          <p>Thank you, Chicago!</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="https://2016.export.gov/japan/build/groups/public/@eg_jp/documents/webcontent/~export/eg_jp_062762~283~DCT_Center_Content/351530-2.jpg" alt="New York" style="width:100%;">
-        <div class="carousel-caption" style = "padding: 5px">
-          <h3>New York</h3>
-          <p>We love the Big Apple!</p>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Left and right controls -->
-<!--     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a> -->
-  </div>
-            <div class="text">
-
-	     <p>Have you traveled somewhere AMAZING, but you don't know where to go next? Unravel Travel can help you with that!</p>
-       <p>Input a scenic image taken during your favorite travels, and Unravel Travel will recommend you your next destination!</p>
+               </div>
+               <div class="item">
+                  <img src="https://cdn.japantimes.2xx.jp/wp-content/uploads/2018/08/n-instagram-a-20180806-870x580.jpg" alt="Chicago" style="width:100%;">
+                  <div class="carousel-caption" style = "padding: 5px">
+                     <h3>Chicago</h3>
+                     <p>Thank you, Chicago!</p>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="https://2016.export.gov/japan/build/groups/public/@eg_jp/documents/webcontent/~export/eg_jp_062762~283~DCT_Center_Content/351530-2.jpg" alt="New York" style="width:100%;">
+                  <div class="carousel-caption" style = "padding: 5px">
+                     <h3>New York</h3>
+                     <p>We love the Big Apple!</p>
+                  </div>
+               </div>
             </div>
-          </article>
-        </div>
-        <footersum></footersum>
-        <footersum></footersum>
-        <footer></footer>
-=======
-        <p>This program was created by Sravya Balasa, Stanley Lee, Titan Ngo, and Jill Su at SD Hacks 2018. </p>
-
-              <p>Credit to Clarifai API (image processor) and CodePen (CSS)</footersum></p>
-              <p></p>
-            </div>
-          </article>
-        </div>
-<!--<footersum>      
-	<footersum></footersum>
-        <footer></footer> -->
-    </body>
+            <!-- Left and right controls -->
+            <!--     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left"></span>
+               <span class="sr-only">Previous</span>
+               </a>
+               <a class="right carousel-control" href="#myCarousel" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right"></span>
+               <span class="sr-only">Next</span>
+               </a> -->
+         </div>
+         <div class="text">
+            <p>Have you traveled somewhere AMAZING, but you don't know where to go next? Unravel Travel can help you with that!</p>
+            <p>Input a scenic image taken during your favorite travels, and Unravel Travel will recommend you your next destination!</p>
+         </div>
+      </article>
+      </div>
+      <footersum></footersum>
+      <footersum></footersum>
+      <footer></footer>
+      <p>This program was created by Sravya Balasa, Stanley Lee, Titan Ngo, and Jill Su at SD Hacks 2018. </p>
+      <p>Credit to Clarifai API (image processor) and CodePen (CSS)</footersum></p>
+      <p></p>
+      </div>
+      </article>
+      </div>
+      <!--<footersum>
+         <footersum></footersum>
+                <footer></footer> -->
+   </body>
 </html>
-
-
