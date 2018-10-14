@@ -29,4 +29,4 @@ Various Documentations:
 #Visual Similarity: https://blog.clarifai.com/search-images-by-visual-similarity-with-the-clarifai-api
 
 # Credits
-https://blog.clarifai.com/search-images-by-visual-similarity-with-the-clarifai-api
+Visual Similarity: https://blog.clarifai.com/search-images-by-visual-similarity-with-the-clarifai-api
