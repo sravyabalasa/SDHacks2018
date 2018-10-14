@@ -290,7 +290,7 @@ article {
 }
 
 .image2 img {
-  width: 300px;
+  width: 400px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -305,13 +305,6 @@ article {
 }
 .text p:first-child {
   margin-top: 0;
-}
-.text p:first-child:first-letter {
-  float: left;
-  color: red;
-  font-size: 4em;
-  line-height: 35px;
-  padding: 19px 10px 10px 0;
 }
 
 @media (min-width: 1100px) {

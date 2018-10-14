@@ -13,8 +13,13 @@ body {
     /* WebKit, Blink, Edge */
      color: #fff;
 }
- a.left.carousel-control{
-     padding: 15px;
+.carousel-item {
+height: 300px;
+overflow: hidden;
+width: 100%;
+}
+.carousel-item img {
+width: 100%;
 }
  .demo {
      text-align: left;
@@ -269,7 +274,7 @@ body {
      margin: 20px 0;
 }
  .image2 img {
-     width: 300px;
+     width: 400px;
      height: auto;
      margin-left: auto;
      margin-right: auto;
