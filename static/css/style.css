@@ -297,11 +297,13 @@ article {
 }
 
 .text {
-  columns: 2;
+  columns: 1;
   column-width: 250px;
   column-gap: 2em;
   padding: 0 20px;
-  text-align: justify;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
 }
 .text p:first-child {
   margin-top: 0;
