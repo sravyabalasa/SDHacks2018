@@ -4,6 +4,8 @@
 <!DOCTYPE html>
 <html>
    <head>
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
       <title>SDHacks 2018</title>
       <meta charset="utf-8">
       <link rel="stylesheet" href="{{ url_for('static', filename='./css/style.css') }}">
@@ -17,11 +19,12 @@
       <div class="page-wrapper">
          <aside>
             <div class = "content">
-
-		    <a href="http://127.0.0.1:5000/"><div class="image2"><img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/000/296/403/datas/original.png"/></div></a>
-
-             </div> 
-            
+               <a href="http://127.0.0.1:5000/">
+                  <div class="image2">
+                     <img src="http://i67.tinypic.com/2b2szo.png"/>
+                  </div>
+               </a>
+            </div>
             <div class="demo">
                <div class="col-md-2 col-md-offset-2"></div>
             </div>
@@ -33,6 +36,11 @@
             <label for="firstname" class="form-label"></label>
             <span class="form-label-content">&#8291;</span>
             </div>
+            </div>
+            <div class = "articlefooter">
+              <footer>
+                <p>Cats are cool</p>
+              </footer>
             </div>
       </div>
       </aside>
@@ -84,11 +92,9 @@
          </div>
       </article>
       </div>
-      <footersum>This program was created by Sravya Balasa, Stanley Lee, Titan Ngo, and Jill Su at SD Hacks 2018. </footersum>
-      <footersum>Credit to Clarifai API (image processor) and CodePen (CSS)</footersum>
       <footer>
-      <p>This program was created by Sravya Balasa, Stanley Lee, Titan Ngo, and Jill Su at SD Hacks 2018. </p>
-      <p>Credit to Clarifai API (image processor) and CodePen (CSS)</footersum></p>
+         <p>This program was created by Sravya Balasa, Stanley Lee, Titan Ngo, and Jill Su at SD Hacks 2018. </p>
+         <p>Credit to Clarifai API (image processor) and CodePen (CSS)</p>
       </footer>
       <p></p>
       </div>
