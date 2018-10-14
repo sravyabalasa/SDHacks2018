@@ -1,8 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
 body {
   margin: 0;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 18px;
-  background: #f7f5eb
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
 }
 
 input{
@@ -13,6 +15,28 @@ input{
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #fff;
+}
+
+.console-container {
+
+  font-family:Khula;
+  font-size:4em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color: black;
+  margin:auto;
+  padding: topx;
+}
+.console-underscore {
+  text-align: center;
+  display:inline-block;
+  color: #000;
+  position:relative;
+  top:-0.14em;
+  left:10px;
 }
 
 .demo {
@@ -304,14 +328,6 @@ article {
   margin-right: auto;
 }
 
-.text {
-  font-family: "Cormorant Garamond", serif;
-  columns: 1;
-  column-width: 250px;
-  column-gap: 2em;
-  padding: 0 20px;
-  text-align: center;
-  font-size: 24px;
 }
 .text2 {
   font-family: "Cormorant Garamond", serif;
