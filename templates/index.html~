@@ -8,33 +8,14 @@
 <head>
   <title>SDHacks 2018</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="{{ url_for('static', filename='templates/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='./css/style.css') }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="js/scripts.js"></script>
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
     <body>
-        <script type="text/javascript">
-              $(function() {
-            var formAnimatedInput = $('.form-animate-fields .form-input');
-            formAnimatedInput.each(function() {
-              var $this = $(this);
-
-              $this.on('focus', function() {
-                $this.addClass('is-filled');
-              });
-
-              $this.on('blur', function() {
-                if($this.val().length == 0) {
-                  $this.removeClass('is-filled');
-                }
-              });
-            });
-          });
-        </script>
         <div class="page-wrapper">
           <aside>
             <div class = "content">
@@ -47,12 +28,12 @@
                 <div class = "content2">
                   <div class="form-field">
                       <input class="form-input" type="Url" name="inputname" id="inputname" placeholder= "Place Image Here" textarea spellcheck = "false">
-		</form>
+    </form>
                       <label for="firstname" class="form-label"></label>
                         <span class="form-label-content">&#8291;</span>
                   </div>
                 </div>
-	      </div>
+        </div>
           </aside>
           <article>
   <div id="myCarousel" class="carousel slide" data-ride="carousel" style = "padding-bottom: 25px; padding-left: 25px; padding-right: 25px">
@@ -104,15 +85,25 @@
   </div>
             <div class="text">
 
-	<p>Have you traveled somewhere AMAZING, but you don't know where to go next?</p>
-              <p>Unravel Travel can help you with that!</p>
-              <p>Input a scenic image taken during your past travels, and Unravel Travel will recommend you your next destination!</p>
+	     <p>Have you traveled somewhere AMAZING, but you don't know where to go next? Unravel Travel can help you with that!</p>
+       <p>Input a scenic image taken during your favorite travels, and Unravel Travel will recommend you your next destination!</p>
             </div>
           </article>
         </div>
-        <footersum>hello</footersum>
-        <footersum>hello</footersum>
+        <footersum></footersum>
+        <footersum></footersum>
         <footer></footer>
+=======
+        <p>This program was created by Sravya Balasa, Stanley Lee, Titan Ngo, and Jill Su at SD Hacks 2018. </p>
+
+              <p>Credit to Clarifai API (image processor) and CodePen (CSS)</footersum></p>
+              <p></p>
+            </div>
+          </article>
+        </div>
+<!--<footersum>      
+	<footersum></footersum>
+        <footer></footer> -->
     </body>
 </html>
 
