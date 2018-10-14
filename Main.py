@@ -15,7 +15,7 @@ WebApp that displays Clarifai's normal results in classifying images of vacation
 from clarifai.rest import ClarifaiApp
 
 # Creates an "app" that runs Clarifai
-CLARIFAI_API_KEY = 'e0d4fa08067248beab61dbcab02f880d'
+CLARIFAI_API_KEY = '47b3bc03e8b5465aa428115b98030bcb'
 app = ClarifaiApp(api_key=CLARIFAI_API_KEY)
 
 # Training model for images, can be specified
