@@ -35,10 +35,9 @@ def results():
     for i in eyes:
         aTuple = results[i]
         concepts.append(aTuple[0])
+        concepts[i] = concepts[i].capitalize()
         percentages.append(float(aTuple[1]) * 100)
-
-    print(concepts)
-    print("dec", percentages)
+        percentages[i] = round(percentages[i], 3) 
         
     #runs search by image
     ''' placeList = function(imageLink)
