@@ -13,12 +13,12 @@ Outputs top three vacation location names + urls
 '''
 
 
-def output(inputURL):
+def output(inputURL, myApi):
 
     # Import statements & Constructors
     import os
     from clarifai.rest import ClarifaiApp
-    app = ClarifaiApp(api_key='47b3bc03e8b5465aa428115b98030bcb')
+    app = ClarifaiApp(api_key=myApi)
 
     # URL Declaration
     URL_FILE_NAME = 'vacations_url.txt'

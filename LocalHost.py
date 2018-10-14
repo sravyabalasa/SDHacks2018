@@ -5,7 +5,8 @@ from flask import *
 
 # importing clarifai api + app setup
 from clarifai.rest import ClarifaiApp
-app = ClarifaiApp(api_key='47b3bc03e8b5465aa428115b98030bcb')
+myApi = '47b3bc03e8b5465aa428115b98030bcb' #myApi variable, change this line
+app = ClarifaiApp(api_key=myApi)
 model = app.public_models.general_model
 
 #importing functions
@@ -21,7 +22,7 @@ app = Flask(__name__)
 
 @app.route('/')  # home page
 def home():
-    run()
+    run(myApi)
     return render_template('index.html')
 
 @app.route('/results')
@@ -29,7 +30,7 @@ def results():
     imageLink = request.args['inputname']
 
     #runs concept confidence
-    results = picPredict(imageLink)
+    results = picPredict(imageLink, myApi)
     #top 5 concepts and their confidence levels
 
     eyes = [0,1,2,3,4]
@@ -44,7 +45,7 @@ def results():
         percentages[i] = round(percentages[i], 3)
 
     #runs search by image
-    placeList = output(imageLink)#returns list with 3 tuples (location name, place)
+    placeList = output(imageLink, myApi)#returns list with 3 tuples (location name, place)
     place1 = placeList[0]
     place2 = placeList[1]
     place3 = placeList[2]

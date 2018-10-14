@@ -14,18 +14,17 @@ WebApp that displays Clarifai's normal results in classifying images of vacation
 # Import Clarifai
 from clarifai.rest import ClarifaiApp
 
-# Creates an "app" that runs Clarifai
-CLARIFAI_API_KEY = '47b3bc03e8b5465aa428115b98030bcb'
-app = ClarifaiApp(api_key=CLARIFAI_API_KEY)
-
-# Training model for images, can be specified
-model = app.public_models.general_model
-
 # PREDICT API
 # Returns a list of concepts in an image based on model
 # Used for access in localHost to imageLink
 
-def picPredict(imageLink):  # URL should be a string for process
+def picPredict(imageLink, myApi):  # URL should be a string for process
+    # Creates an "app" that runs Clarifai
+    app = ClarifaiApp(api_key=myApi)
+
+    # Training model for images, can be specified
+    model = app.public_models.general_model
+
     # All data given by model
     response = model.predict_by_url(url=imageLink)
     # Accessing the concepts from all the data returned by predict_by_url
