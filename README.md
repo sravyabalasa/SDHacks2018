@@ -9,7 +9,11 @@ Welcome to your friendly vacation-picker. Enter our website with an online image
 This project was created in 36 hours during a hackathon at UCSD. The team's interest in machine learning drove us to use the Clarifai API for image and video recognition. To implement a user input facility and wide range of front end and back end technologies, we developed a web application involving Python (backend) and  HTML, Bootstrap framework, CSS, JS, and flask (frontend).
 
 # Screenshots + Video Demo
-(Insert Screenshots + Demo)
+![Desktop](Desktop.png)
+![Mobile](Mobile.png)
+
+DEMO:
+https://www.youtube.com/watch?v=Lhu-0-K8HQA&feature=youtu.be
 
 # Installation + Interaction
 Installation
