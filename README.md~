@@ -12,13 +12,8 @@ This project was created in 36 hours during a hackathon at UCSD. The team's inte
 (Insert Screenshots + Demo)
 
 # Installation + Interaction
-Installation
-- Create an API key through Clarifai, and insert it into the variable "myApi" in LocalHost.py
-- Run the file LocalHost.py to run a local host server on your computer
-- Enter "localhost:5000" in your web browser
-Interaction
-- Enter the image address (url) into the text area. Press 'Enter'
-- Use the carousel slideshow to navigate through your three recommendations
+(Insert how to run/host)
+- Create an API key through Clarifai for inserting into places in main.py, Test_Upload.py , Test_Search.py
 
 # Features 
 - Self-created dataset
@@ -30,9 +25,8 @@ Interaction
 - Inability to find a specific enough dataset and having to make our own specific one
 
 # Extensions
-- Create a website link; an established domain
-- Insert more variety of images in dataset per location
-- Insert more locations in the dataset
+- Create a website link
+- Insert more variety of images in dataset
 - Inputs users URL to train dataset further
 
 # CLARIFAI - API Reference
