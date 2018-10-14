@@ -29,15 +29,21 @@ This project was created in 36 hours during a hackathon at UCSD. The team's inte
 # CLARIFAI - API Reference
 Various Documentations:
 
-#Online Documentation: https://clarifai.com/developer/guide/
+#Online Documentation:
+https://clarifai.com/developer/guide/
 
-#PDF Documentation: https://media.readthedocs.org/pdf/clarifai-python/latest/clarifai-python.pdf
+#PDF Documentation:
+https://media.readthedocs.org/pdf/clarifai-python/latest/clarifai-python.pdf
 
-#Language References: https://clarifai.com/developer/reference/
+#Language References:
+https://clarifai.com/developer/reference/
 
-#Visual Similarity: https://blog.clarifai.com/search-images-by-visual-similarity-with-the-clarifai-api
+#Visual Similarity:
+https://blog.clarifai.com/search-images-by-visual-similarity-with-the-clarifai-api
 
 # Credits
-Visual Similarity: https://blog.clarifai.com/search-images-by-visual-similarity-with-the-clarifai-api
+Visual Similarity:
+https://blog.clarifai.com/search-images-by-visual-similarity-with-the-clarifai-api
 
-Website Aesthetics: https://codepen.io/
+Website Aesthetics:
+https://codepen.io/
