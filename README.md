@@ -10,7 +10,7 @@ This project was created in 36 hours during a hackathon at UCSD. The team's inte
 # Screenshots + Video Demo
 (Insert Screenshots + Demo)
 
-![logo][Unravel Travel Logo.png]
+![logo](Unravel Travel Logo.png)
 
 # Installation + Interaction
 (Insert how to run/host)
