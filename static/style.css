@@ -138,7 +138,7 @@ aside {
   background-size: 400% 400%;
   -webkit-animation: Gradient 30s ease infinite;
   -moz-animation: Gradient 30s ease infinite;
-  animation: Gradient 30  s ease infinite;
+  animation: Gradient 30s ease infinite;
   background-color: #222;
   color: white;
   display: flex;
