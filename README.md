@@ -16,6 +16,7 @@ https://www.youtube.com/watch?v=Lhu-0-K8HQA&feature=youtu.be
 
 # Installation + Interaction
 Installation
+- Download this repository
 - Create an API key through Clarifai, and insert it into the variable "myApi" in LocalHost.py
 - Run the file LocalHost.py to run a local host server on your computer
 - Enter "localhost:5000" in your web browser
