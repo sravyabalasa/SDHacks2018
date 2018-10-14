@@ -10,6 +10,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="{{ url_for('static', filename='templates/style.css') }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/scripts.js"></script>
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -103,14 +104,14 @@
   </div>
             <div class="text">
 
-		    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae harum, accusantium aliquid quia dolores error, fugit placeat ratione amet non nostrum necessitatibus soluta earum ipsum voluptate neque corporis asperiores modi. Placeat unde, autem voluptatibus sed repellendus consequuntur quia temporibus. Repellat sunt officia repudiandae amet quisquam saepe, qui impedit quibusdam beatae.</p>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae harum, accusantium aliquid quia dolores error, fugit placeat ratione amet non nostrum necessitatibus soluta earum ipsum voluptate neque corporis asperiores modi. Placeat unde, autem voluptatibus sed repellendus consequuntur quia temporibus. Repellat sunt officia repudiandae amet quisquam saepe, qui impedit quibusdam beatae.</p>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae harum, accusantium aliquid quia dolores error, fugit placeat ratione amet non nostrum necessitatibus soluta earum ipsum voluptate neque corporis asperiores modi. Placeat unde, autem voluptatibus sed repellendus consequuntur quia temporibus. Repellat sunt officia repudiandae amet quisquam saepe, qui impedit quibusdam beatae.</p>
+	<p>Have you traveled somewhere AMAZING, but you don't know where to go next?</p>
+              <p>Unravel Travel can help you with that!</p>
+              <p>Input a scenic image taken during your past travels, and Unravel Travel will recommend you your next destination!</p>
             </div>
           </article>
         </div>
-        <footersum>dolor sit amet, consectetur adipisicing elit. Recusandae harum, accusantium aliquid quia dolores error, fugit placeat ratione amet non nostrum necessitatibus soluta earum ipsum voluptate neque corporis asperiores modi. Placeat unde, autem voluptatibus sed repellendus consequuntur quia temporibus. Repellat sunt officia repudiandae amet quisquam saepe, qui impedit quibusdam beatae.</footersum>
-        <footersum>dolor sit amet, consectetur adipisicing elit. Recusandae harum, accusantium aliquid quia dolores error, fugit placeat ratione amet non nostrum necessitatibus soluta earum ipsum voluptate neque corporis asperiores modi. Placeat unde, autem voluptatibus sed repellendus consequuntur quia temporibus. Repellat sunt officia repudiandae amet quisquam saepe, qui impedit quibusdam beatae.</footersum>
+        <footersum>hello</footersum>
+        <footersum>hello</footersum>
         <footer></footer>
     </body>
 </html>

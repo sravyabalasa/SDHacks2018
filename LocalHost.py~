@@ -25,39 +25,12 @@ def results():
     imageLink = request.args['inputname']
     results = picPredict(imageLink)
     print("these are results", str(results))
-    printConcept = results[0]
-    percentage = results[1]
-    printPercentage = str(float(percentage) * 100)
-    return render_template('test.html', concept=printConcept, percentage=printPercentage)
-
-
-'''@app.route('/', methods = ["GET", "POST"])
-def background_process():
-        if request.method == 'POST':
-            try:
-                imageLink = request.args['inputname']
-                if imageLink:
-                    results = picPredict( imageLink )
-                    return render_template('test.html', results)
-                else:
-                    return render_template
-            except:
-                return'''
-
+    concept = results[0]
+    decimal = results[1]
+    percentage = str(float(decimal[1]) * 100)
+    return render_template('test.html', concept=concept, percentage=percentage)
 
 # run local host
 if __name__ == "__main__":
     app.run()
 
-''' <script type=text/javascript>
-            $(function() {
-              $('a#process_input').bind('click', function() {
-                $.getJSON('/background_home', {
-                  story: $('textarea[name="imageLink"]').val(),
-                }, function(data) {
-                  $('#results').text(data.result);
-                });
-                return false;
-              });
-            });
-        </script>   '''

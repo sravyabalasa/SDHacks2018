@@ -23,41 +23,22 @@ def home():
 @app.route('/results')
 def results():
     imageLink = request.args['inputname']
+
+    #runs concept confidence
     results = picPredict(imageLink)
-    print("these are results", str(results))
-    printConcept = results[0]
-    percentage = results[1]
-    printPercentage = str(float(percentage) * 100)
-    return render_template('test.html', concept=printConcept, percentage=printPercentage)
+    concept = results[0]
+    decimal = results[1]
+    percentage = str(float(decimal[1]) * 100)
+    
+    #runs search by image
+    ''' placeList = function(imageLink)
+    place1 = placeList[0]
+    place2 = placeList[1]
+    place3 = placeList[2]'''
 
-
-'''@app.route('/', methods = ["GET", "POST"])
-def background_process():
-        if request.method == 'POST':
-            try:
-                imageLink = request.args['inputname']
-                if imageLink:
-                    results = picPredict( imageLink )
-                    return render_template('test.html', results)
-                else:
-                    return render_template
-            except:
-                return'''
-
+    return render_template('test.html', concept=concept)''' percentage=percentage, name1=place1[0], name2=place2[1], name3=place3[2], image1=place1[1], image2=place2[1], image3=place3[1])'''
 
 # run local host
 if __name__ == "__main__":
     app.run()
 
-''' <script type=text/javascript>
-            $(function() {
-              $('a#process_input').bind('click', function() {
-                $.getJSON('/background_home', {
-                  story: $('textarea[name="imageLink"]').val(),
-                }, function(data) {
-                  $('#results').text(data.result);
-                });
-                return false;
-              });
-            });
-        </script>   '''

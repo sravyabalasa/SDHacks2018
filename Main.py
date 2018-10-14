@@ -25,7 +25,6 @@ model = app.public_models.general_model
 # Returns a list of concepts in an image based on model
 # Used for access in localHost to imageLink
 
-
 def picPredict(imageLink):  # URL should be a string for process
     # All data given by model
     response = model.predict_by_url(url=imageLink)
@@ -38,10 +37,3 @@ def picPredict(imageLink):  # URL should be a string for process
 
     return results
 
-
-# Passing URL through model
-cherryBlossom = picPredict('https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/Japan/cherry-blossom-hirosaki-park-japan.jpg?imwidth=450')
-print("Your image mostly has: ")
-for i in cherryBlossom:
-    print("Concept: " + i[0])
-    print("Percentage Similarity: " + str(float(i[1]) * 100))
