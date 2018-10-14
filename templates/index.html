@@ -3,99 +3,115 @@
 <!-- https://s-media-cache-ak0.pinimg.com/564x/2e/f7/8d/2ef78d1f44a6ade085bb38810104435a.jpg-->
 <!DOCTYPE html>
 <html>
-   <head>
-      <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXFxc9FhYW/RYWFv9RUVH/1tbW/xYWFv8WFhb0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWFhbtFhYW/xYWFv8WFhb/FhYW/x4eHv8WFhb/FhYW/xYWFv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhYW/xYWFv8WFhb/FhYW/xYWFv8WFhb/FhYW/xYWFv8WFhb/FhYW/wAAAAAAAAAAAAAAAAAAAAAAAAAAFhYW9BYWFv8WFhb/FhYW/yEhIf8WFhb/FhYW/xYWFv8WFhb/FhYW/xYWFv8AAAAAAAAAAAAAAAAAAAAAAAAAABYWFv8WFhb/FhYW/xYWFv9ERET//v7+//7+/v8WFhb/FhYW/xYWFv8WFhb/FhYW/wAAAAAAAAAAAAAAAAAAAAAWFhb/FhYW/xYWFv8WFhb//v7+/729vf/+/v7/FhYW/hYWFv8WFhb/FhYW/xYWFv8AAAAAAAAAAAAAAAAAAAAAFhYW/xYWFv8WFhb//f39//7+/v/+/v7//Pz8//39/f8WFhb/FhYW/xYWFv4WFhb/AAAAAAAAAAAAAAAAAAAAABYWFv8WFhb/FhYW/xYWFv8WFhb//v7+//7+/v/+/v7/FhYW/xYWFv8WFhb/FhYW/wAAAAAAAAAAAAAAAAAAAAAWFhb4FhYW/xYWFv4WFhb/FhYW/xYWFv8WFhb/FhYW/xYWFv8WFhb/FhYW/RYWFv4AAAAAAAAAAAAAAAAAAAAAAAAAABYWFv9CQkL/FhYW/xYWFv8WFhb/FhYW/xYWFv8WFhb/FhYW/xYWFv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhYW/+zs7P8WFhb+FhYW/xYWFv8WFhb/FhYW/xYWFv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWFhb/FhYW/hYWFv8WFhb/19fX/xYWFv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD4HwAA4A8AAOAHAADABwAAwAMAAMADAADAAwAAwAMAAMADAADgBwAA8A8AAPgfAAD//wAA//8AAA==" rel="icon" type="image/x-icon" />
-      <link rel="icon" type="image/png" href="favicon.png" />
-       <title>Unravel Travel</title>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="{{ url_for('static', filename='./css/style.css') }}">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-      <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <style>.carousel-inner > .item > img { width:100%; height:570px; } </style>
-   </head>
-   <body>
-      <div class="page-wrapper">
-         <aside>
-            <div class = "content">
-               <a href="http://127.0.0.1:5000/">
-                  <div class="image2">
-                     <img src="http://i67.tinypic.com/2b2szo.png"/>
-                  </div>
-               </a>
+
+<head>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXFxc9FhYW/RYWFv9RUVH/1tbW/xYWFv8WFhb0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWFhbtFhYW/xYWFv8WFhb/FhYW/x4eHv8WFhb/FhYW/xYWFv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhYW/xYWFv8WFhb/FhYW/xYWFv8WFhb/FhYW/xYWFv8WFhb/FhYW/wAAAAAAAAAAAAAAAAAAAAAAAAAAFhYW9BYWFv8WFhb/FhYW/yEhIf8WFhb/FhYW/xYWFv8WFhb/FhYW/xYWFv8AAAAAAAAAAAAAAAAAAAAAAAAAABYWFv8WFhb/FhYW/xYWFv9ERET//v7+//7+/v8WFhb/FhYW/xYWFv8WFhb/FhYW/wAAAAAAAAAAAAAAAAAAAAAWFhb/FhYW/xYWFv8WFhb//v7+/729vf/+/v7/FhYW/hYWFv8WFhb/FhYW/xYWFv8AAAAAAAAAAAAAAAAAAAAAFhYW/xYWFv8WFhb//f39//7+/v/+/v7//Pz8//39/f8WFhb/FhYW/xYWFv4WFhb/AAAAAAAAAAAAAAAAAAAAABYWFv8WFhb/FhYW/xYWFv8WFhb//v7+//7+/v/+/v7/FhYW/xYWFv8WFhb/FhYW/wAAAAAAAAAAAAAAAAAAAAAWFhb4FhYW/xYWFv4WFhb/FhYW/xYWFv8WFhb/FhYW/xYWFv8WFhb/FhYW/RYWFv4AAAAAAAAAAAAAAAAAAAAAAAAAABYWFv9CQkL/FhYW/xYWFv8WFhb/FhYW/xYWFv8WFhb/FhYW/xYWFv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhYW/+zs7P8WFhb+FhYW/xYWFv8WFhb/FhYW/xYWFv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWFhb/FhYW/hYWFv8WFhb/19fX/xYWFv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD4HwAA4A8AAOAHAADABwAAwAMAAMADAADAAwAAwAMAAMADAADgBwAA8A8AAPgfAAD//wAA//8AAA==" rel="icon" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Unravel Travel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .carousel-inner > .item > img {
+            width: 100%;
+            height: 570px;
+        }
+        .carousel-caption {
+          right: 30%;
+          left: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <aside>
+            <div class="content">
+                <a href="http://127.0.0.1:5000/">
+                    <div class="image2">
+                        <img src="http://i67.tinypic.com/2b2szo.png" />
+                    </div>
+                </a>
             </div>
             <div class="demo">
-               <div class="col-md-2 col-md-offset-2"></div>
+                <div class="col-md-2 col-md-offset-2"></div>
             </div>
             <form class="form form-animate-fields" action="/results">
-               <div class = "content2">
-                  <div class="form-field">
-                     <input class="form-input" type="Url" name="inputname" id="inputname" placeholder= "Place Image Here" textarea spellcheck = "false">
+                <div class="content2">
+                    <div class="form-field">
+                        <input class="form-input" type="Url" name="inputname" id="inputname" placeholder="Place Image Here" textarea spellcheck="false">
             </form>
             <label for="firstname" class="form-label"></label>
             <span class="form-label-content">&#8291;</span>
             </div>
+            <div class='console-container'>
+                <span id='text'></span>
+                <div class='console-underscore' id='console'>&#95;
+                </div>
             </div>
-            <div class = "articlefooter">
-              <footer>
-                 <a href="https://github.com/sravyabalasa/SDHacks2018" style="text-decoration:none; color: #fff;">This webapp was created by Sravya Balasa, Stanley Lee, Titan Ngo, and Jill Su at SD Hacks 2018.</a>
-              </footer>
             </div>
-      </div>
-      </aside>
-      <article>
-         <div id="myCarousel" class="carousel slide" data-ride="carousel" style = "padding-bottom: 25px; padding-left: 25px; padding-right: 25px">
+            <div class="articlefooter">
+                <footer>
+                    <a href="https://github.com/sravyabalasa/SDHacks2018" style="text-decoration:none; color: #fff;">This webapp was created by Sravya Balasa, Stanley Lee, Titan Ngo, and Jill Su at SD Hacks 2018.</a>
+                </footer>
+            </div>
+    </div>
+    </aside>
+    <article>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding-bottom: 25px; padding-left: 25px; padding-right: 25px">
             <!-- Indicators -->
-            <ol class="carousel-indicators" >
-               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-               <li data-target="#myCarousel" data-slide-to="1"></li>
-               <li data-target="#myCarousel" data-slide-to="2"></li>
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-               <div class="item active" style = "padding: 0px">
-                  <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/05/best-art-museums-1-1.jpg" alt="Los Angeles" style="width:100%;">
-                  <div class="carousel-caption" style = "padding: 5px">
-                     <h3>Los Angeles</h3>
-                     <p>Don't act narrow, go Broad!</p>
-                  </div>
-               </div>
-               <div class="item">
-                  <img src="https://orig00.deviantart.net/144b/f/2012/356/8/4/chicago__shooting_through_the_bean_by_alierturk-d5orx1y.jpg" alt="Chicago" style="width:100%;">
-                  <div class="carousel-caption" style = "padding: 5px; background: rgba(255, 255, 255, 0.3); background-size: 100px 30px">
-                     <h3>Chicago</h3>
-                     <p>Bean Our Guest!</p>
-                  </div>
-               </div>
-               <div class="item">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Times_Square%2C_New_York_City_%28HDR%29.jpg" alt="New York" style="width:100%;">
-                  <div class="carousel-caption" style = "padding: 5px">
-                     <h3>New York</h3>
-                     <p>Square up to have a great Time!</p>
-                  </div>
-               </div>
+                <div class="item active" style="padding: 0px">
+                    <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/05/best-art-museums-1-1.jpg" alt="Los Angeles" style="width:100%;">
+                    <div class="carousel-caption" style="padding: 0px; background-size: 50% auto; background: rgba(0, 0, 0, 0.5); background-blend-mode: multiply;">
+                        <h3>Los Angeles</h3>
+                        <p>Don't act narrow, go Broad!</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://orig00.deviantart.net/144b/f/2012/356/8/4/chicago__shooting_through_the_bean_by_alierturk-d5orx1y.jpg" alt="Chicago" style="width:100%;">
+                    <div class="carousel-caption" style="padding: 0px; background-size: 50% auto; background: rgba(0, 0, 0, 0.5); background-blend-mode: multiply;">
+                        <h3>Chicago</h3>
+                        <p>Bean Our Guest!</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Times_Square%2C_New_York_City_%28HDR%29.jpg" alt="New York" style="width:100%;">
+                    <div class="carousel-caption" style="padding: 0px; background-size: 50% auto; background: rgba(0, 0, 0, 0.5); background-blend-mode: multiply; ">
+                        <h3>New York</h3>
+                        <p>Square up to have a great Time!</p>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class='console-container'>
+        </div>
+        <!--<div class='console-container'>
           <span id='text'></span>
             <div class='console-underscore' id='console'>&#95;
             </div>
-          </div>
+          </div> -->
+        <div class="text">
+          <h2><b>Hello!</b></h2>
+          <p> </p>
+          <p>Welcome to your friendly vacation-picker. Enter our website with an online image of your favorite locale and we'll reccomend to you some very similar places for your next relaxing getway. Come on over and <i>unravel</i> what <i>travel</i> is best for you!</p>
+          <p>This project was created in 36 hours during a hackathon at UCSD using Clarifai API for image and video recognition</p>
+        </div>
         <script type="text/javascript" src="{{ url_for('static', filename='./js/scripts.js') }}"></script>
         <!--I travel. U Travel. Unravel Travel-->
-      </div>
-      </article>
-      </div>
-   </body>
+        </div>
+    </article>
+    </div>
+</body>
+
 </html>
 <!-- Credits -->
 <!-- https://codepen.io/Tbgse/pen/dYaJyJ -->
-
-
-
-
-
-
-

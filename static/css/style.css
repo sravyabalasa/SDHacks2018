@@ -26,17 +26,19 @@ input{
   width:600px;
   display:block;
   position:absolute;
-  color: black;
+  color: color;
   margin:auto;
-  padding: topx;
+  top: 220%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  mix-blend-mode: multiply;
 }
 .console-underscore {
   text-align: center;
   display:inline-block;
-  color: #000;
+  color: #fff;
   position:relative;
-  top:-0.14em;
-  left:10px;
+  mix-blend-mode: multipy;
 }
 
 .demo {
@@ -329,6 +331,17 @@ article {
 }
 
 }
+
+.text {
+  font-family: "Cormorant Garamond", serif;
+  columns: 2;
+  column-width: 250px;
+  column-gap: 2em;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
 .text2 {
   font-family: "Cormorant Garamond", serif;
   columns: 1;

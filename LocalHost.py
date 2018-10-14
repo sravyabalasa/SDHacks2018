@@ -5,7 +5,7 @@ from flask import *
 
 # importing clarifai api + app setup
 from clarifai.rest import ClarifaiApp
-app = ClarifaiApp(api_key='e0d4fa08067248beab61dbcab02f880d')
+app = ClarifaiApp(api_key='f99a50c6a32a413798e836ee50eae501')
 model = app.public_models.general_model
 
 #importing functions
@@ -41,9 +41,9 @@ def results():
         concepts.append(aTuple[0])
         concepts[i] = concepts[i].capitalize()
         percentages.append(float(aTuple[1]) * 100)
-        percentages[i] = round(percentages[i], 3) 
-        
-    #runs search by image 
+        percentages[i] = round(percentages[i], 3)
+
+    #runs search by image
     placeList = output(imageLink)#returns list with 3 tuples (location name, place)
     place1 = placeList[0]
     place2 = placeList[1]

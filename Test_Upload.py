@@ -6,7 +6,7 @@ Date:     10/14/18
 '''
 
 '''
-run() 
+run()
 
 Uploads all vacation images to the server
 No output
@@ -20,7 +20,7 @@ def run():
     from clarifai.rest import Image as ClImage
 
     #Creates Clarifai App
-    app = ClarifaiApp(api_key='a589bc8304c042419bcb4077b269e897')
+    app = ClarifaiApp(api_key='f99a50c6a32a413798e836ee50eae501')
     #Resets the server to 0 images, avoids duplicates
     app.inputs.delete_all()
 
@@ -42,7 +42,7 @@ def run():
     #NAMES
     NAMES_FILE_NAME = 'vacations_names.txt'
     NAMES_FILE_PATH = os.path.join(os.path.curdir, NAMES_FILE_NAME)
-    
+
     return
 
 run()
