@@ -5,7 +5,9 @@ from flask import *
 
 # importing clarifai api + app setup
 from clarifai.rest import ClarifaiApp
-myApi = '47b3bc03e8b5465aa428115b98030bcb' #myApi variable
+myApi = '47b3bc03e8b5465aa428115b98030bcb' #myApi variable, change this line
+#backup api keys
+#myApi = '32256d518ae94e9597fe852eb356250a'
 app = ClarifaiApp(api_key=myApi)
 model = app.public_models.general_model
 
@@ -22,7 +24,7 @@ app = Flask(__name__)
 
 @app.route('/')  # home page
 def home():
-    run( '47b3bc03e8b5465aa428115b98030bcb')
+    run(myApi)
     return render_template('index.html')
 
 @app.route('/results')
