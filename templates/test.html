@@ -15,7 +15,16 @@
          <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-         <style>.carousel-inner > .item > img { width:100%; height:570px; } </style>
+          <style>
+              .carousel-inner > .item > img {
+                  width: 100%;
+                  height: 570px;
+              }
+              .carousel-caption {
+                right: 30%;
+                left: 30%;
+              }
+          </style>
       </head>
       <body>
          <!-- <script type="text/javascript" src="scripts.js"></script> -->
@@ -67,14 +76,14 @@
                <div class="carousel-inner">
                   <div class="item active" style = "padding: 0px">
 			  <img src={{image1}} alt={{name1}} style="width:100%;">
-                     <div class="carousel-caption" style = "padding: 5px">
+                    <div class="carousel-caption" style="padding: 0px; background-size: 50% auto; background: rgba(0, 0, 0, 0.5); background-blend-mode: multiply;">
 			     <h3>{{name1}}</h3>
                         <p></p>
                      </div>
                   </div>
                   <div class="item">
 			  <img src={{image2}} alt={{name2}} style="width:100%;">
-                     <div class="carousel-caption" style = "padding: 5px">
+                    <div class="carousel-caption" style="padding: 0px; background-size: 50% auto; background: rgba(0, 0, 0, 0.5); background-blend-mode: multiply;">
 			     <h3>{{name2}}</h3>
                         <p></p>
                      </div>
@@ -82,7 +91,7 @@
                   <body>
                      <div class="item">
 			     <img src={{image3}} alt={{name3}} style="width:100%;">
-                        <div class="carousel-caption" style = "padding: 5px">
+                    <div class="carousel-caption" style="padding: 0px; background-size: 50% auto; background: rgba(0, 0, 0, 0.5); background-blend-mode: multiply;">
 				<h3>{{name3}}</h3>
                            <p></p>
                         </div>
@@ -99,7 +108,7 @@
                   </a> -->
             </div>
             <div class="text2">
-            <p><b><u>Tags : Confidence%</u></b></p>
+            <p><b><u>Tags : Confidence %</u></b></p>
             <p> {{ concept1 }}: {{ percentage1 }}%</p>
             <p> {{ concept2 }}: {{ percentage2 }}%</p>
             <p> {{ concept3 }}: {{ percentage3 }}%</p>
