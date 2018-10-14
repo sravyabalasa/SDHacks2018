@@ -26,17 +26,28 @@ def results():
 
     #runs concept confidence
     results = picPredict(imageLink)
-    concept = results[0]
-    decimal = results[1]
-    percentage = str(float(decimal[1]) * 100)
-    
+    #top 5 concepts and their confidence levels
+
+    eyes = [0,1,2,3,4]
+    concepts = []
+    percentages = []
+
+    for i in eyes:
+        aTuple = results[i]
+        concepts.append(aTuple[0])
+        percentages.append(float(aTuple[1]) * 100)
+
+    print(concepts)
+    print("dec", percentages)
+        
     #runs search by image
     ''' placeList = function(imageLink)
     place1 = placeList[0]
     place2 = placeList[1]
     place3 = placeList[2]'''
 
-    return render_template('test.html', concept=concept, percentage=percentage)
+    return render_template('test.html', concept1=concepts[0], concept2=concepts[1], concept3=concepts[2], concept4=concepts[3], concept5=concepts[4], percentage1=percentages[0], percentage2=percentages[1], percentage3=percentages[2], percentage4=percentages[3], percentage5=percentages[4])
+
 ''' name1=place1[0], name2=place2[1], name3=place3[2], image1=place1[1], image2=place2[1], image3=place3[1])'''
 
 # run local host
