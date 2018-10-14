@@ -5,8 +5,11 @@ from flask import *
 
 # importing clarifai api + app setup
 from clarifai.rest import ClarifaiApp
-myApi = '47b3bc03e8b5465aa428115b98030bcb' #myApi variable, change this line
-#myApi = '32256d518ae94e9597fe852eb356250a' <-- uncomment backup api key
+#change myApi with new api key
+myApi = '32256d518ae94e9597fe852eb356250a' 
+
+#myApi = '47b3bc03e8b5465aa428115b98030bcb' backup key - 2k left
+
 app = ClarifaiApp(api_key=myApi)
 model = app.public_models.general_model
 
