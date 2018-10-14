@@ -19,6 +19,7 @@ This project was created in 36 hours during a hackathon at UCSD. The team's inte
 
 # CLARIFAI - API Reference
 Various Documentations:
+
 #Online Documentation: https://clarifai.com/developer/guide/
 
 #PDF Documentation: https://media.readthedocs.org/pdf/clarifai-python/latest/clarifai-python.pdf
