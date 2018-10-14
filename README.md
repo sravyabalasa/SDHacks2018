@@ -26,6 +26,7 @@ Interaction
 
 # Challenges
 - Clarifai's API methods were difficult to implement, especially in removing images/duplicates off of the server and storing variables for output
+- Dealing with free, limited usage of Clarifai API
 - Connecting the backend to front end using specific functions
 - Inability to find a specific enough dataset and having to make our own specific one
 
