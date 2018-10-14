@@ -8,7 +8,7 @@ This project was created in 36 hours during a hackathon at UCSD. The team's inte
 # Screenshots + Video Demo
 (Insert Screenshots + Demo)
 
-# Installation
+# Installation + Interaction
 (Insert how to run/host)
 
 # Features 
