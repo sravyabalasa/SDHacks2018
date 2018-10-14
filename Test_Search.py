@@ -18,7 +18,7 @@ def output(inputURL):
     # Import statements & Constructors
     import os
     from clarifai.rest import ClarifaiApp
-    app = ClarifaiApp(api_key='f99a50c6a32a413798e836ee50eae501')
+    app = ClarifaiApp(api_key='303124e3f6374c819309c02579c5c08b')
 
     # URL Declaration
     URL_FILE_NAME = 'vacations_url.txt'
