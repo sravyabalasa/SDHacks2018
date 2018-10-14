@@ -19,10 +19,12 @@ This project was created in 36 hours during a hackathon at UCSD. The team's inte
 - Self-created dataset
 - User input facility
 
-# Code Example
+# Challenges
+- Clarifai's API methods were difficult to implement, especially in removing images/duplicates off of the server and storing variables for output
+- Connecting the backend to front end using specific functions
+- Inability to find a specific enough dataset and having to make our own specific one
 
 # Extensions
-- Prevent duplicates of already existing images
 - Create a website link
 - Insert more variety of images in dataset
 - Inputs users URL to train dataset further
