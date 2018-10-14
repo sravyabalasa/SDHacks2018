@@ -34,3 +34,4 @@ Various Documentations:
 
 # Credits
 Visual Similarity: https://blog.clarifai.com/search-images-by-visual-similarity-with-the-clarifai-api
+CodePen.io
