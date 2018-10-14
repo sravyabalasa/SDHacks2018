@@ -7,7 +7,7 @@
    <html lang="en">
       <head>
 	  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXFxc9FhYW/RYWFv9RUVH/1tbW/xYWFv8WFhb0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWFhbtFhYW/xYWFv8WFhb/FhYW/x4eHv8WFhb/FhYW/xYWFv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhYW/xYWFv8WFhb/FhYW/xYWFv8WFhb/FhYW/xYWFv8WFhb/FhYW/wAAAAAAAAAAAAAAAAAAAAAAAAAAFhYW9BYWFv8WFhb/FhYW/yEhIf8WFhb/FhYW/xYWFv8WFhb/FhYW/xYWFv8AAAAAAAAAAAAAAAAAAAAAAAAAABYWFv8WFhb/FhYW/xYWFv9ERET//v7+//7+/v8WFhb/FhYW/xYWFv8WFhb/FhYW/wAAAAAAAAAAAAAAAAAAAAAWFhb/FhYW/xYWFv8WFhb//v7+/729vf/+/v7/FhYW/hYWFv8WFhb/FhYW/xYWFv8AAAAAAAAAAAAAAAAAAAAAFhYW/xYWFv8WFhb//f39//7+/v/+/v7//Pz8//39/f8WFhb/FhYW/xYWFv4WFhb/AAAAAAAAAAAAAAAAAAAAABYWFv8WFhb/FhYW/xYWFv8WFhb//v7+//7+/v/+/v7/FhYW/xYWFv8WFhb/FhYW/wAAAAAAAAAAAAAAAAAAAAAWFhb4FhYW/xYWFv4WFhb/FhYW/xYWFv8WFhb/FhYW/xYWFv8WFhb/FhYW/RYWFv4AAAAAAAAAAAAAAAAAAAAAAAAAABYWFv9CQkL/FhYW/xYWFv8WFhb/FhYW/xYWFv8WFhb/FhYW/xYWFv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhYW/+zs7P8WFhb+FhYW/xYWFv8WFhb/FhYW/xYWFv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWFhb/FhYW/hYWFv8WFhb/19fX/xYWFv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD4HwAA4A8AAOAHAADABwAAwAMAAMADAADAAwAAwAMAAMADAADgBwAA8A8AAPgfAAD//wAA//8AAA==" rel="icon" type="image/x-icon" />
-         <title>SDHacks 2018</title>
+         <title>Unravel Travel</title>
          <meta charset="utf-8">
          <link rel="stylesheet" href="{{ url_for('static', filename='./css/style.css') }}">
          <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +15,7 @@
          <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <style>.carousel-inner > .item > img { width:100%; height:570px; } </style>
       </head>
       <body>
          <!-- <script type="text/javascript" src="scripts.js"></script> -->
@@ -37,6 +38,11 @@
                <span class="form-label-content">&#8291;</span>
                </div>
                </div>
+          <div class = "articlefooter">
+              <footer>
+                 <a href="https://github.com/sravyabalasa/SDHacks2018" style="text-decoration:none; color: #fff;">This webapp was created by Sravya Balasa, Stanley Lee, Titan Ngo, and Jill Su at SD Hacks 2018.</a>
+              </footer>
+         </div>
          </div>
          </aside>
          <article>
@@ -50,14 +56,14 @@
                <!-- Wrapper for slides -->
                <div class="carousel-inner">
                   <div class="item active" style = "padding: 0px">
-                     <img src="https://via.placeholder.com/350x150"" alt="Variable 1" style="width:100%;">
+			  <img src={{image1}} alt={{name1}} style="width:100%;">
                      <div class="carousel-caption" style = "padding: 5px">
                         <h3>Variable 1</h3>
                         <p>Caption 1</p>
                      </div>
                   </div>
                   <div class="item">
-                     <img src="https://via.placeholder.com/350x150"" alt="Variable 2" style="width:100%;">
+			  <img src={{image2}} alt={{name2}} style="width:100%;">
                      <div class="carousel-caption" style = "padding: 5px">
                         <h3>Variable 2</h3>
                         <p>Caption 2</p>
@@ -65,7 +71,7 @@
                   </div>
                   <body>
                      <div class="item">
-                        <img src="https://via.placeholder.com/350x150"" alt="Variable 3" style="width:100%;">
+			     <img src={{image3}} alt={{name3}} style="width:100%;">
                         <div class="carousel-caption" style = "padding: 5px">
                            <h3>Variable 3</h3>
                            <p>Caption 3</p>
@@ -82,7 +88,7 @@
                   <span class="sr-only">Next</span>
                   </a> -->
             </div>
-            <div class="text">
+            <div class="text2">
             <h1 = "Tags: Confidence Values"></h1>
             <p> {{ concept1 }}: {{ percentage1 }}%</p>
             <p> {{ concept2 }}: {{ percentage2 }}%</p>

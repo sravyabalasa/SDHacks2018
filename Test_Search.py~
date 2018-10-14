@@ -59,6 +59,6 @@ def output( inputURL ):
 	index2 = images.index(var2)
 	name2 = names[index2]
 
-	return ([name0,var0],[name1,var1],[name2,var2])
+	return ([var0,name0],[var1,name1],[var2,name2])
 
 
