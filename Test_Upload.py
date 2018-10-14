@@ -20,7 +20,7 @@ def run():
     from clarifai.rest import Image as ClImage
 
     #Creates Clarifai App
-    app = ClarifaiApp(api_key='303124e3f6374c819309c02579c5c08b')
+    app = ClarifaiApp(api_key='47b3bc03e8b5465aa428115b98030bcb')
     #Resets the server to 0 images, avoids duplicates
     app.inputs.delete_all()
 
