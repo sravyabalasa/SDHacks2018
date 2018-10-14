@@ -1,0 +1,112 @@
+Aberdeen, Scotland 
+Adelaide, Australia
+Alaska, USA
+Algiers, Algeria
+Amsterdam, Netherlands
+Ankara, Turkey
+Asunción, Paraguay
+Auckland, New Zealand
+Bangkok, Thailand
+Barcelona, Spain
+Beijing, China
+Belém, Brazil
+Belfast, Northern Ireland
+Belgrade, Serbia
+Berlin, Germany
+Birmingham, England
+Bogotá, Colombia
+Bombay, India
+Bora Bora, Tahiti
+Bordeaux, France
+Bremen, Germany
+Brisbane, Australia
+Bristol, England
+Brussels, Belgium
+Bucharest, Romania
+Budapest, Hungary
+Buenos Aires, Argentina
+Cairo, Egypt
+Calcutta, India
+Cancun, Mexico
+Canton, China
+Cape Town, South Africa
+Caracas, Venezuela
+Cayenne, French Guiana
+Chihuahua, Mexico
+Chongqing, China
+Copenhagen, Denmark
+Córdoba, Argentina
+Dakar, Senegal
+Darwin, Australia
+Dublin, Ireland
+Durban, South Africa
+Edinburgh, Scotland
+Frankfurt, Germany
+Glasgow, Scotland
+Grand Canyon National Park, USA
+Guatemala City, Guatemala
+Guayaquil, Ecuador
+Hamburg, Germany
+Havana, Cuba
+Hawaii, USA
+Helsinki, Finland
+Hobart, Tasmania
+Hong Kong, China
+Iquique, Chile
+Irkutsk, Russia
+Jakarta, Indonesia
+Kingston, Jamaica
+Kuala Lumpur, Malaysia
+La Paz, Bolivia
+Las Vegas, USA
+Lima, Peru
+Lisbon, Portugal
+Liverpool, England
+London, England
+Lyons, France
+Madrid, Spain
+Marseilles, France
+Mazatlán, Mexico
+Mecca, Saudi Arabia
+Melbourne, Australia
+Mexico City, Mexico
+Milan, Italy
+Moscow, Russia
+Munich, Germany
+Nagoya, Japan
+Nanjing (Nanking), China
+Naples, Italy
+New Delhi, India
+New York City, USA
+Newcastle-on-Tyne, England
+Niagra Falls State Park, Canada
+Osaka, Japan
+Oslo, Norway
+Panama City, Panama
+Paris, France
+Perth, Australia
+Prague, Czech Republic
+Rangoon, Myanmar
+Reykjavík, Iceland
+Rio de Janeiro, Brazil
+Rome, Italy
+Salvador, Brazil
+Santiago, Chile
+Santorini, Greece
+São Paulo, Brazil
+Sequoia National Park, USA
+Shanghai, China
+Singapore, Singapore
+Sofia, Bulgaria
+St. Petersburg, Russia
+Sydney, Australia
+Tananarive, Madagascar
+Tokyo, Japan
+Venice, Italy
+Veracruz, Mexico
+Vienna, Austria
+Warsaw, Poland
+Wellington, New Zealand
+Yellowstone National Park, USA
+Zermatt, Switzerland
+Zürich, Switzerland
