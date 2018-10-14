@@ -136,9 +136,9 @@ aside {
   color: #fff;
   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
   background-size: 400% 400%;
-  -webkit-animation: Gradient 30s ease infinite;
-  -moz-animation: Gradient 30s ease infinite;
-  animation: Gradient 30s ease infinite;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
   background-color: #222;
   color: white;
   display: flex;
@@ -320,7 +320,5 @@ article {
   }
 }
 footer {
-  height: 40px;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  color: white;
 }
