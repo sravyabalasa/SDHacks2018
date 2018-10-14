@@ -13,7 +13,7 @@ This project was created in 36 hours during a hackathon at UCSD. The team's inte
 
 # Installation + Interaction
 (Insert how to run/host)
-- Create an API key through Clarifai for use in main.py, Test_Upload.py , Test_Search.py
+- Create an API key through Clarifai for inserting into places in main.py, Test_Upload.py , Test_Search.py
 
 # Features 
 - Self created dataset
