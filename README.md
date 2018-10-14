@@ -1,16 +1,15 @@
 # UNRAVEL TRAVEL - SDHacks2018
 
-
 Hello!
 Welcome to your friendly vacation-picker. Enter our website with an online image of your favorite locale and we'll reccomend to you some very similar places for your next relaxing getway. Come on over and UNRAVEL what TRAVEL is best for you!
+
+![logo](UTlogo.png)
 
 # Motivation
 This project was created in 36 hours during a hackathon at UCSD. The team's interest in machine learning drove us to using the Clarifai API for image and video recognition. To implement a user input facility and wide range of front end and back end technologies, we developed a web application involving Python (backend) and  HTML, Bootstrap framework, CSS, JS, and flask (frontend).
 
 # Screenshots + Video Demo
 (Insert Screenshots + Demo)
-
-![logo](UTlogo.png)
 
 # Installation + Interaction
 (Insert how to run/host)
