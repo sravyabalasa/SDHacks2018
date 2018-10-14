@@ -16,7 +16,7 @@ This project was created in 36 hours during a hackathon at UCSD. The team's inte
 - Create an API key through Clarifai for inserting into places in main.py, Test_Upload.py , Test_Search.py
 
 # Features 
-- Self created dataset
+- Self-created dataset
 - User input facility
 
 # Code Example
@@ -29,16 +29,16 @@ This project was created in 36 hours during a hackathon at UCSD. The team's inte
 # CLARIFAI - API Reference
 Various Documentations:
 
-#Online Documentation:
+Online Documentation:
 https://clarifai.com/developer/guide/
 
-#PDF Documentation:
+PDF Documentation:
 https://media.readthedocs.org/pdf/clarifai-python/latest/clarifai-python.pdf
 
-#Language References:
+Language References:
 https://clarifai.com/developer/reference/
 
-#Visual Similarity:
+Visual Similarity:
 https://blog.clarifai.com/search-images-by-visual-similarity-with-the-clarifai-api
 
 # Credits
