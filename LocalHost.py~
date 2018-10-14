@@ -23,12 +23,21 @@ def home():
 @app.route('/results')
 def results():
     imageLink = request.args['inputname']
+
+    #runs concept confidence
     results = picPredict(imageLink)
-    print("these are results", str(results))
     concept = results[0]
     decimal = results[1]
     percentage = str(float(decimal[1]) * 100)
+    
+    #runs search by image
+    ''' placeList = function(imageLink)
+    place1 = placeList[0]
+    place2 = placeList[1]
+    place3 = placeList[2]'''
+
     return render_template('test.html', concept=concept, percentage=percentage)
+''' name1=place1[0], name2=place2[1], name3=place3[2], image1=place1[1], image2=place2[1], image3=place3[1])'''
 
 # run local host
 if __name__ == "__main__":
