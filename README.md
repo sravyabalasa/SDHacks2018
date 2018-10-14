@@ -1,7 +1,7 @@
 # UNRAVEL TRAVEL - SDHacks2018
 
 Hello!
-Welcome to your friendly vacation-picker. Enter our website with an online image of your favorite locale and we'll reccomend to you some very similar places for your next relaxing getway. Come on over and UNRAVEL what TRAVEL is best for you!
+Welcome to your friendly vacation-picker. Enter our website with an online image of your favorite locale and we'll recommend to you some very similar places for your next relaxing getaway. Come on over and UNRAVEL what TRAVEL is best for you!
 
 ![logo](UTlogo.png)
 
