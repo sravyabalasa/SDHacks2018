@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: "Cormorant Garamond", serif;
   font-size: 18px;
+  background: #f7f5eb
 }
 
 input{
@@ -28,7 +29,7 @@ a.left.carousel-control{
 }
 .content2 {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
@@ -36,6 +37,13 @@ a.left.carousel-control{
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%,-50%);
+}
+.articlefooter {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  text-align: center;
   transform: translate(-50%,-50%);
 }
 /**
@@ -297,14 +305,13 @@ article {
 }
 
 .text {
+  font-family: "Cormorant Garamond", serif;
   columns: 1;
   column-width: 250px;
   column-gap: 2em;
   padding: 0 20px;
   text-align: center;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: bold;
-  font-size: 36px;
+  font-size: 24px;
 }
 .text p:first-child {
   margin-top: 0;
