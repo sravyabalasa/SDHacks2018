@@ -14,8 +14,8 @@ input{
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #fff;
 }
-a.left.carousel-control{
-  padding: 15px;
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
 }
 
 .demo {
@@ -39,11 +39,14 @@ a.left.carousel-control{
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
 .articlefooter {
-  position: absolute;
-  top: 90%;
-  left: 90%;
   text-align: center;
+  font-size: 11px;
+  color: #fff;
+  position: absolute;
+  top: 96%;
+  left: 50%;
   transform: translate(-50%,-50%);
 }
 /**
