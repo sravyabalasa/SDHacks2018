@@ -14,9 +14,6 @@ input{
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #fff;
 }
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 100%;
-}
 
 .demo {
   text-align: left;
