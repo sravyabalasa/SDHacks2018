@@ -23,6 +23,7 @@ This project was created in 36 hours during a hackathon at UCSD. The team's inte
 
 # Extensions
 - Prevent duplicates of already existing images
+- Create a website link
 - Insert more variety of images in dataset
 - Inputs users URL to train dataset further
 
