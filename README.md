@@ -36,6 +36,8 @@ Interaction
 
 # Extensions
 - Create a website link; an established domain
+- Feedback in training
+- Duplicates: drop down menu or user input bar
 - Insert more variety of images in dataset per location
 - Insert more locations in the dataset
 - Inputs users URL to train dataset further
