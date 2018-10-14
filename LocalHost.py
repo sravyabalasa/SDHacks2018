@@ -12,7 +12,7 @@ from Main import picPredict  # importing function
 
 # local host app set up
 app = Flask(__name__)
-# localhost:5000 <-- put this in url bar
+#http://127.0.0.1:5000/ <-- put this in url bar
 
 # https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/Japan/cherry-blossom-hirosaki-park-japan.jpg?imwidth=450 <-- imageLink
 

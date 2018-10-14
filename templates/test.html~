@@ -20,7 +20,7 @@
         <div class="page-wrapper">
           <aside>
             <div class = "content">
-		    <a href="localhost:5000"><div class="image2"><img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/000/296/403/datas/original.png"/></div></a>
+		    <a href="localhost:5000/"><div class="image2"><img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/000/296/403/datas/original.png"/></div></a>
             </div>
                 <div class="demo">
                 <div class="col-md-2 col-md-offset-2"></div>
