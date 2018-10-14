@@ -10,7 +10,6 @@ This project was created in 36 hours during a hackathon at UCSD. The team's inte
 
 # Screenshots + Video Demo
 ![Desktop](Desktop.png)
-![Mobile](Mobile.png)
 
 DEMO:
 https://www.youtube.com/watch?v=Lhu-0-K8HQA&feature=youtu.be
